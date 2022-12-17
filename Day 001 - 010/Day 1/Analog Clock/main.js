@@ -8,7 +8,7 @@ setInterval(function(){
 	let m = day.getMinutes() * 6; // 360/60=6
 	let s = day.getSeconds() * 6; // 360/60=6
 
-	hour.style.transform = `rotateZ(${h}deg)`;
+	hour.style.transform = `rotateZ(${h+(m/12)}deg)`; // m/12 ==> (0-5)
 	minute.style.transform = `rotateZ(${m}deg)`;
 	second.style.transform = `rotateZ(${s}deg)`;
 }, 1000);
