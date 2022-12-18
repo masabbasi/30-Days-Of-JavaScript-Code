@@ -1,0 +1,128 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* font-size: 10px; */
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+  height: 100vh;
+  background-color: #141627;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100%;
+	height: inherit;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+	padding-top: 4rem;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+}
+
+/* Reset Style */
+a {
+  text-decoration: none;
+}
+
+.slider {
+	height: 40rem;
+	margin: 0 5rem;
+  border: 1rem solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+	position: relative;
+	background-image: url("./1.jpg");
+	background-size: cover;
+}
+
+.left , .right {
+	color: #141627;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.5rem;
+	width: 3rem;
+	height: 3rem;
+	font-weight: bold;
+	border-radius: 50%;
+	background-color: #d53a9d;
+	position: absolute;
+	top: 50%;
+	left: -2rem;
+}
+
+.right {
+	background-color: #743ad5;
+	left: auto;
+	right: -2rem;
+}
+
+/* .slider::before , .slider::after {
+	content: "<";
+	color: #141627;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.5rem;
+	width: 3rem;
+	height: 3rem;
+	font-weight: bold;
+	border-radius: 50%;
+	background-color: #d53a9d;
+	position: absolute;
+	top: 50%;
+	left: -2rem;
+}
+
+.slider::after {
+	content: ">";
+	background-color: #743ad5;
+	left: auto;
+	right: -2rem;
+} */
+
+.slider__bottom {
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 4rem;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.slider__bottom span {
+	width: 1.5rem;
+	height: 1.5rem;
+	background-color: rgba(139, 127, 127, 0.315);
+	border-radius: 50%;
+	margin: 0 0.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.active::after {
+	content: "";
+	width: 0.7rem;
+	height: 0.7rem;
+	background-color: white;
+	position: absolute;
+	border-radius: 50%;
+}
