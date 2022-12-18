@@ -20,7 +20,7 @@ sliderItem.forEach(function (item) {
 });
 
 rightBtn.addEventListener("click", function () {
-  imgNumber = imgNumber + 1;
+  imgNumber = Number(imgNumber) + 1;
   if (imgNumber == imageSrc.length) {
     imgNumber = 0;
   }
@@ -36,7 +36,7 @@ rightBtn.addEventListener("click", function () {
 });
 
 leftBtn.addEventListener("click", function () {
-  imgNumber = imgNumber - 1;
+  imgNumber = Number(imgNumber) - 1;
   if (imgNumber == -1) {
     imgNumber = imageSrc.length - 1;
   }
