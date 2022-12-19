@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 80%;
 	height: inherit;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -47,8 +47,7 @@ a {
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
 	position: relative;
-	background-image: url("./1.jpg");
-	background-size: cover;
+	background: url("./1.jpg") center/cover no-repeat;
 }
 
 .left , .right {
