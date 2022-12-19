@@ -19,6 +19,25 @@ body {
   height: 100vh;
   background-color: #607D8B;
   font-family: "Roboto", sans-serif;
+	position: relative;
+}
+
+.back {
+	width: 7rem;
+	height: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem 1rem;
+	background-color: brown;
+	border-radius: 1rem;
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+}
+
+.back a {
+	color: white;
 }
 
 .container {
