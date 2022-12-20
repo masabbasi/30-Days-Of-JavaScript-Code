@@ -1,0 +1,113 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* font-size: 10px; */
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+  height: 100vh;
+  background-color: #141627;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+.back {
+  width: 7rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: brown;
+  border-radius: 1rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.back a {
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: inherit;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Reset Style */
+a {
+  text-decoration: none;
+}
+
+.new-quote {
+	padding: 1rem 2rem;
+	margin-bottom: 1rem;
+	border-radius: 1rem;
+	background-color: tomato;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.new-quote:hover {
+	background-color: rgb(247, 75, 45);
+}
+
+.box {
+  max-width: 60rem;
+  min-height: 12rem;
+  background-color: rgb(3, 120, 156);
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.box__img {
+  width: 5rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.box__img img {
+  width: 100%;
+}
+
+.quote {
+	padding: 4rem 1rem;
+	font-weight: 600;
+	font-size: 2rem;
+	text-align: justify;
+	color: rgb(202 205 221);
+}
+
+.author {
+  position: absolute;
+  bottom: 1rem;
+  right: 3rem;
+  color: rgb(221, 200, 200);
+  font-weight: bold;
+  font-size: 1.8rem;
+}
