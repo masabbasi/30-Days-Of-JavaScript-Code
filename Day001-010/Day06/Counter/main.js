@@ -17,6 +17,7 @@ decrease.addEventListener("click", function () {
 });
 
 reset.addEventListener("click", function () {
+	resultValue = 0;
   result.innerText = 0;
 	result.style.color = "rgb(255, 255, 255)";
 });
