@@ -1,0 +1,120 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* font-size: 10px; */
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+  height: 100vh;
+  background-color: #141627;
+  font-family: "Roboto", sans-serif;
+	position: relative;
+	user-select: none;
+}
+
+.back {
+	width: 7rem;
+	height: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem 1rem;
+	background-color: brown;
+	border-radius: 1rem;
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+}
+
+.back a {
+	color: white;
+}
+
+.container {
+  width: 100%;
+	height: 80vh;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Reset Style */
+a {
+  text-decoration: none;
+}
+
+.box {
+width: 40rem;
+border-radius: 1rem;
+border:2px solid rgb(139, 69, 148);
+text-align: center;
+padding: 2rem;
+}
+
+.result {
+font-size: 2rem;
+font-weight: bold;
+display: block;
+margin-bottom: 2rem;
+color: rgb(255, 255, 255);
+}
+
+.increase, .decrease {
+display: inline-block;
+border-radius: 1rem;
+border:2px solid rgb(139, 69, 148);
+padding: 1rem 1.5rem;
+margin: 1rem 2rem;
+color: rgb(36, 175, 66);
+cursor: pointer;
+font-weight: 700;
+}
+
+.increase:hover {
+	border-color: rgb(36, 175, 66);
+	background-color: rgb(36, 175, 66);
+	color: #141627;
+	font-weight: 700;
+}
+
+.decrease:hover {
+	border-color: rgb(161, 36, 47);
+	background-color: rgb(161, 36, 47);
+	color: #141627;
+}
+
+.decrease {
+	color: rgb(161, 36, 47)
+}
+
+.reset {
+	width: 4rem;
+	height: 4rem;
+	font-weight: 700;
+	display: inline-block;
+	border: 1px solid rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
+	border-radius: 50%;
+	padding: 0.8rem;
+	cursor: pointer;
+}
+
+.reset:hover {
+	background-color: rgb(255, 255, 255);
+	color: #141627;
+}
