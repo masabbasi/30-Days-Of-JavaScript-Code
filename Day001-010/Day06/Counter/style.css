@@ -118,3 +118,17 @@ font-weight: 700;
 	background-color: rgb(255, 255, 255);
 	color: #141627;
 }
+
+@media (max-width: 425px) {
+	* {
+		cursor: none;
+	}
+
+	.increase, .decrease,.reset {
+		display: block;
+	}
+
+	.reset {
+		margin: 0 auto;
+	}
+}
