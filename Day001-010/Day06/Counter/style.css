@@ -120,12 +120,9 @@ font-weight: 700;
 }
 
 @media (max-width: 425px) {
-	* {
-		cursor: none;
-	}
-
 	.increase, .decrease,.reset {
 		display: block;
+		cursor: none;
 	}
 
 	.reset {
