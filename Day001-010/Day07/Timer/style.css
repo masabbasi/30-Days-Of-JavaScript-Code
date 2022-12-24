@@ -74,6 +74,8 @@ a {
 	padding: 1rem 2rem;
 	border-radius: 1rem;
 	background-color: rgb(207, 207, 16);
+	color: white;
+	font-weight: bold;
 }
 
 .timer span {

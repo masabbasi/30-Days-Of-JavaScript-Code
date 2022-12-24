@@ -4,20 +4,19 @@ const hour = document.querySelector(".hour");
 const minute = document.querySelector(".minute");
 const second = document.querySelector(".second");
 let timeInterval;
+let timeStop = true;
 let savedDate = localStorage.getItem("localDate") || false;
-let timeStart = true;
 
 if (savedDate) {
   startTimer(savedDate);
   date.valueAsDate = new Date(savedDate);
 }
 
-date.addEventListener("change", function (e) {
-  e.preventDefault();
+date.addEventListener("change", function () {
   clearInterval(timeInterval);
-  let myDate = new Date(date.value);
+  const myDate = new Date(date.value);
   localStorage.setItem("localDate", myDate);
-  timeStart = true;
+ 	timeStop = true;
   startTimer(myDate);
 });
 
@@ -25,11 +24,7 @@ function startTimer(d) {
   function updateTimer() {
 		let tl = timeLeft(d);
 		if (tl.total <= 0) {
-			timeStart = false;
-			day.innerText = 0;
-			hour.innerText = 0;
-			minute.innerText = 0;
-			second.innerText = 0;
+		 timeStop = false;
 		}
 		day.innerText = tl.day;
 		hour.innerText = tl.hour;
@@ -39,7 +34,7 @@ function startTimer(d) {
 
   updateTimer();
 
-  if (timeStart) {
+  if  (timeStop) {
     timeInterval = setInterval(updateTimer, 1000);
   } else {
     clearInterval(timeInterval);
