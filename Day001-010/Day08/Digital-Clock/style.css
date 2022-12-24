@@ -1,0 +1,81 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* font-size: 10px; */
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+  height: 100vh;
+  background-color: #141627;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+.back {
+  width: 7rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: brown;
+  border-radius: 1rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.back a {
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: 80vh;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Reset Style */
+a {
+  text-decoration: none;
+}
+
+.box {
+	width: 30rem;
+	height: 10rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+	font-weight: bold;
+	color: white;
+  -webkit-box-shadow: 0px 0px 18px -8px rgba(18, 199, 96, 1);
+  -moz-box-shadow: 0px 0px 18px -8px rgba(18, 199, 96, 1);
+  box-shadow: 0px 0px 18px -8px rgba(18, 199, 96, 1);
+}
+
+.box span {
+	color: rgba(18, 199, 96, 1);
+	margin: 0 1rem;
+}
+
+.box span:last-child {
+	margin-right: 0;
+}
