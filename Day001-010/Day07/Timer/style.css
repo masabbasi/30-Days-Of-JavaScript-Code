@@ -57,3 +57,29 @@ body {
 a {
   text-decoration: none;
 }
+
+.title, .timer {
+	color: white;
+	text-align: center;
+}
+
+.title span {
+	color:rgb(207, 207, 16);
+}
+
+#date {
+	margin: 2rem 0;
+	border: none;
+	outline: none;
+	padding: 1rem 2rem;
+	border-radius: 1rem;
+	background-color: rgb(207, 207, 16);
+}
+
+.timer span {
+	margin-left: 1rem;
+}
+
+.timer span:first-child {
+	margin-left: 0;
+}
