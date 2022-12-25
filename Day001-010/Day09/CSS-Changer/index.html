@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>CSS Changer</title>
+</head>
+
+<body>
+	<div class="back"><a href="./../../../index.html">Back</a></div>
+	<div class="container">
+		<div class="box">
+			<h1>Change the CSS of below image!</h1>
+			<div class="css-controller">
+				<div><label for="width">Width : </label><input type="range" name="" id="width" value="10" data-sizing="rem" min="0"					max="28"></div>
+				<div><label for="border-radius">Border Radius : </label><input type="range" name="" id="border-radius" value="2" data-sizing="%" min="0" max="100"></div>
+				<div><label for="color">Color : </label><input type="color" name="" id="color" value="#C9FF1F"></div>
+				<div><label for="padding">Padding : </label><input type="range" name="" id="padding" value="1" data-sizing="rem" min="0" max="10"></div>
+				<div><label for="blur">Blur : </label><input type="range" name="" id="blur" value="0" data-sizing="px" min="0" max="25"></div>
+			</div>
+			<div class="item">
+				<img src="./1.jpg" alt="">
+			</div>
+		</div>
+	</div>
+
+	<script src="./main.js"></script>
+</body>
+
+</html>
