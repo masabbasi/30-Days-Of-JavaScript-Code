@@ -1,0 +1,98 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* font-size: 10px; */
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+  height: 100vh;
+  background-color: #141627;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+	user-select: none;
+}
+
+.back {
+  width: 7rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: brown;
+  border-radius: 1rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.back a {
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: 80vh;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Reset Style */
+a {
+  text-decoration: none;
+}
+
+.box {
+	width: 32rem;
+	background-color: rgba(0, 255, 255, 0.363);
+	color: white;
+	padding: 2rem;
+	border-radius: 0.8rem;
+	text-align: center;
+}
+
+.box h1 {
+	line-height: 1;
+}
+
+.time {
+	margin: 2rem 0;
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+.controller span {
+	width: 2rem;
+	height: 1rem;
+	padding: 0.5rem 2rem;
+  border: 1px solid #141627;
+	border-radius: 0.8rem;
+	cursor: pointer;
+	transition: all 0.5s ease-in;
+}
+
+.controller span:nth-child(2) {
+	margin: 0 1.5rem;
+}
+
+.controller span:hover {
+	border: 1px solid rgba(255, 255, 255, 0.829);
+	background-color: rgba(255, 255, 255, 0.829);
+	color: rgb(10, 90, 90);
+}
