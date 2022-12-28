@@ -9,6 +9,7 @@ let myTimer;
 controller.forEach(function(item){
 	item.addEventListener("click",function(item){
 		if (item.target.classList.contains("start")) {
+			clearInterval(myTimer);
 			myTimer = setInterval(update,10);
 		} else if (item.target.classList.contains("stop")) {
 			clearInterval(myTimer);
