@@ -99,20 +99,22 @@ a {
 
 .box .close::after, .box .close::before{
 	position: absolute;
+	top: 50%;
+	left: 50%;
 	content: "";
 	background-color: white;
 	width: 0.3rem;
 	height: 1.5rem;
-	transform: rotate(45deg);
+	transform: translate(-50%,-50%) rotate(45deg);
 	transition: all 0.5s ease-in-out;
 }
 
 .box .close:hover::after,.box .close:hover::before {
-	transform: rotate(90deg);
+	transform: translate(-50%,-50%) rotate(90deg);
 }
 
 .box .close::after {
-	transform: rotate(-45deg);
+	transform: translate(-50%,-50%) rotate(-45deg);
 }
 
 .box h2, .box p {
