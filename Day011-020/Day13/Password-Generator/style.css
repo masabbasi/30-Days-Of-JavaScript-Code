@@ -1,0 +1,120 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* font-size: 10px; */
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-color: #141627;
+  font-family: "Roboto", sans-serif;
+	user-select: none;
+}
+
+.back {
+  width: 7rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: brown;
+  border-radius: 1rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.back a {
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: 80vh;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Reset Style */
+a {
+  text-decoration: none;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+}
+
+.password {
+position: relative;
+background-color: rgba(44, 151, 140, 0.685);
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 2rem;
+margin: 1rem 0 2rem 0;
+}
+
+#password-input {
+	outline: none;
+	border: none;
+	width: 28rem;
+	height: 6rem;
+	padding: 1rem 5rem 1rem 4rem;
+	background-color: transparent;
+	color: rgba(255, 255, 255, 0.808);
+	font-size: 1.7rem;
+}
+
+.copy-password {
+	position: absolute;
+	right: 0;
+	top: 10%;
+	cursor: pointer;
+}
+
+.copy-password:hover {
+	transform: scale(1.1);	
+}
+
+.copyText {
+	position: absolute;	
+	top: 25%;
+	right: 5rem;
+	background-color: rgb(230, 230, 230);
+	color: rgb(10, 212, 20);
+	font-weight: bold;
+	padding: 0.5rem;
+	border-radius: 1rem;
+	display: none;
+}
+
+.generator-btn {
+	background-color: rgba(255, 255, 0, 0.466);
+	color: white;
+	border-radius: 1rem;
+	padding: 1rem 2rem;
+	cursor: pointer;
+}
+
+.generator-btn:hover{
+	background-color: rgba(255, 255, 0, 0.63);
+}
