@@ -130,7 +130,7 @@ a {
   color: rgba(72, 255, 0, 0.63);
 }
 
-@media (max-width: 300px) {
+@media (max-width: 500px) {
 	.box {
 		padding: 2rem;
 	}
