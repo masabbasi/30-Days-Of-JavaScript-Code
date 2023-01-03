@@ -59,7 +59,10 @@ a {
 .search__box {
   height: 6rem;
   position: relative;
-	margin-left: -6rem;
+}
+
+.search__box.active {
+  margin-left: -6rem;
 }
 
 .search__input {
@@ -70,52 +73,53 @@ a {
   padding: 0.5rem 1.5rem;
   border-radius: 0.5rem;
   font-size: 1.5rem;
-	transition: width 0.5s ease;
-	color: rgb(71, 69, 69);
+  transition: width 0.5s ease;
+  color: rgb(71, 69, 69);
 }
 
 .search__box.active .search__input {
-	width: 20rem;
+  width: 20rem;
 }
 
 .btn {
-	background-color: white;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 6rem;
-	height: 6rem;
-	border-radius: 0.5rem;
-	transition: transform 0.5s ease;
-	cursor: pointer;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 0.5rem;
+  transition: transform 0.5s ease;
+  cursor: pointer;
 }
 
 .search__box.active .btn {
-	background-color: black;
-	transform: translateX(20.5rem);
+  background-color: black;
+  transform: translateX(20.5rem);
 }
 
-.search__img, .close__img {
-	width: 4.5rem;
-	height: 4.5rem;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
+.search__img,
+.close__img {
+  width: 4.5rem;
+  height: 4.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .close__img {
-	width: 3.5rem;
-	height: 3.5rem;
-	opacity: 0;
+  width: 3.5rem;
+  height: 3.5rem;
+  opacity: 0;
 }
 
 .search__box.active .btn .close__img {
-	opacity: 1;
+  opacity: 1;
 }
 
-@media (max-width:500px) {
-	.btn {
-		cursor: none;
-	}
+@media (max-width: 500px) {
+  .btn {
+    cursor: none;
+  }
 }
