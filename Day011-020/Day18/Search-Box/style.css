@@ -1,0 +1,121 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* font-size: 10px; */
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-color: #141627;
+  font-family: "Roboto", sans-serif;
+}
+
+.back {
+  width: 7rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: brown;
+  border-radius: 1rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.back a {
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: 80vh;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Reset Style */
+a {
+  text-decoration: none;
+}
+
+.search__box {
+  height: 6rem;
+  position: relative;
+	margin-left: -6rem;
+}
+
+.search__input {
+  width: 6rem;
+  height: 100%;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+	transition: width 0.5s ease;
+	color: rgb(71, 69, 69);
+}
+
+.search__box.active .search__input {
+	width: 20rem;
+}
+
+.btn {
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 6rem;
+	height: 6rem;
+	border-radius: 0.5rem;
+	transition: transform 0.5s ease;
+	cursor: pointer;
+}
+
+.search__box.active .btn {
+	background-color: black;
+	transform: translateX(20.5rem);
+}
+
+.search__img, .close__img {
+	width: 4.5rem;
+	height: 4.5rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.close__img {
+	width: 3.5rem;
+	height: 3.5rem;
+	opacity: 0;
+}
+
+.search__box.active .btn .close__img {
+	opacity: 1;
+}
+
+@media (max-width:500px) {
+	.btn {
+		cursor: none;
+	}
+}
