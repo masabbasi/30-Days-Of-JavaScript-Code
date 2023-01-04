@@ -6,14 +6,14 @@ let timeLineWidth = 0;
 btns.forEach(function (btn) {
   btn.addEventListener("click", function () {
     if (btn.classList.contains("btn__next")) {
-      borojolo();
+      next();
     } else {
-      biaaghab();
+      previous();
     }
   });
 });
 
-function borojolo() {
+function next() {
   switch (timeLineWidth) {
     case 0: {
       timeLineWidth = 25;
@@ -42,7 +42,7 @@ function borojolo() {
   timeLine.style.width = `${timeLineWidth}%`;
 }
 
-function biaaghab() {
+function previous() {
   switch (timeLineWidth) {
     case 100: {
       timeLineWidth = 75;
@@ -64,7 +64,7 @@ function biaaghab() {
       circles[1].style.borderColor = "rgb(78, 76, 76)";
       break;
     }
-    case 2: {
+    case 0: {
       break;
     }
   }

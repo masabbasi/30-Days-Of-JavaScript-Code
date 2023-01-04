@@ -137,6 +137,9 @@ a {
 
 .btn {
   width: 10rem;
+	background-color: transparent;
+	outline: none;
+	font-size: 1.5rem;
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   border: 0.1rem solid rgb(8, 245, 245);
@@ -146,7 +149,7 @@ a {
   align-items: center;
   color: white;
   transition: background-color 0.5s ease;
-  cursor: pointer;
+  cursor:pointer;
 }
 
 .btn:hover {
