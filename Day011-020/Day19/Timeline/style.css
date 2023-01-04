@@ -148,8 +148,17 @@ a {
   justify-content: center;
   align-items: center;
   color: white;
+	cursor: pointer;
   transition: background-color 0.5s ease;
-  cursor:pointer;
+}
+
+.btn:disabled {
+	background-color: rgba(8, 245, 245, 0.082);
+	cursor: not-allowed;
+}
+
+.btn:disabled:hover{
+	background-color: rgba(8, 245, 245, 0.082);
 }
 
 .btn:hover {
