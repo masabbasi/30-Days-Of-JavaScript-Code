@@ -1,0 +1,162 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* font-size: 10px; */
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-color: #141627;
+  font-family: "Roboto", sans-serif;
+}
+
+.back {
+  width: 7rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: brown;
+  border-radius: 1rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.back a {
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: 80vh;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Reset Style */
+a {
+  text-decoration: none;
+}
+
+.box {
+  border: 0.1rem solid rgb(8, 245, 245);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0rem;
+  position: relative;
+}
+
+.top::before {
+  content: "";
+  width: 100%;
+  height: 0.4rem;
+  background-color: rgb(78, 76, 76);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.timeline {
+  width: 0;
+  height: 0.4rem;
+  background-color: rgb(49, 226, 49);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: width 0.5s ease;
+  z-index: -1;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  padding: 1rem;
+  margin-right: 2rem;
+  border: 0.3rem solid rgb(78, 76, 76);
+  border-radius: 50%;
+  color: white;
+  background-color: #141627;
+  transition: border-color 0.5s ease;
+}
+
+.circle.active {
+  border-color: rgb(49, 226, 49);
+}
+
+.circle:last-child {
+  margin-right: 0;
+}
+
+.body {
+  min-height: 20rem;
+}
+
+.content {
+  width: 100%;
+  height: 15rem;
+  border: 0.1rem solid rgb(8, 245, 245);
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  width: 10rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgb(8, 245, 245);
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(8, 245, 245);
+  color: #141627;
+}
+
+
+@media (max-width:500px) {
+	.btn {
+		cursor: none;
+	}
+}
