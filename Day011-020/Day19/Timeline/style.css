@@ -57,6 +57,7 @@ a {
 }
 
 .box {
+	width:80%;
   border: 0.1rem solid rgb(8, 245, 245);
   padding: 1rem;
   border-radius: 0.5rem;
