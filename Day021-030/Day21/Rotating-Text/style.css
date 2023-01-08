@@ -16,7 +16,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   overflow-x: hidden;
-	background-color: #141627;
+  background-color: #141627;
   font-family: "Roboto", sans-serif;
 }
 
@@ -65,44 +65,48 @@ a {
 
 .earth {
   position: relative;
-	background-image: url("./earth1.jpg");
+  background-image: url("./earth1.jpg");
   width: 20rem;
   height: 20rem;
-	background-size: 40rem;
+  background-size: 40rem;
   transition: transform 100ms linear;
-	animation: spin 8s infinite linear;
+  animation: spin 8s infinite linear;
   border-radius: 50%;
   box-shadow: inset 2rem 0 8rem 0.6rem rgba(0, 0, 0, 1);
   transform-style: preserve-3d;
 }
 
 .earth:after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   border-radius: 50%;
-  box-shadow: -2.5px 1.5rem 8rem 1rem rgba(0,0,0,.7) inset;
+  box-shadow: -2.5px 1.5rem 8rem 1rem rgba(0, 0, 0, 0.7) inset;
 }
 
 .earth:before {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  opacity: .2;
+  opacity: 0.2;
   border-radius: 50%;
   background: radial-gradient(circle at 10rem 10rem, #fff, #000);
 }
 
 @keyframes spin {
-  0% {background-position-x: 0;}
-  100% {background-position-x: 40rem;}
-	}
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 40rem;
+  }
+}
 
 .text {
   width: 25rem;
@@ -161,3 +165,9 @@ a {
   transition: transform 0.58s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+@media (max-width: 600px) {
+  .box p,
+  .words {
+    font-size: 2.5rem;
+  }
+}
