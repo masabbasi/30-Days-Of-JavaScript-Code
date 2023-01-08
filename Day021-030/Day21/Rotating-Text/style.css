@@ -1,0 +1,163 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* font-size: 10px; */
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+	background-color: #141627;
+  font-family: "Roboto", sans-serif;
+}
+
+.back {
+  width: 7rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: brown;
+  border-radius: 1rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.back a {
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: 80vh;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Reset Style */
+a {
+  text-decoration: none;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.earth {
+  position: relative;
+	background-image: url("./earth1.jpg");
+  width: 20rem;
+  height: 20rem;
+	background-size: 40rem;
+  transition: transform 100ms linear;
+	animation: spin 8s infinite linear;
+  border-radius: 50%;
+  box-shadow: inset 2rem 0 8rem 0.6rem rgba(0, 0, 0, 1);
+  transform-style: preserve-3d;
+}
+
+.earth:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  box-shadow: -2.5px 1.5rem 8rem 1rem rgba(0,0,0,.7) inset;
+}
+
+.earth:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .2;
+  border-radius: 50%;
+  background: radial-gradient(circle at 10rem 10rem, #fff, #000);
+}
+
+@keyframes spin {
+  0% {background-position-x: 0;}
+  100% {background-position-x: 40rem;}
+	}
+
+.text {
+  width: 25rem;
+  position: relative;
+}
+
+.box p {
+  color: rgb(196, 174, 174);
+  font-size: 3rem;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.words {
+  position: absolute;
+  top: 58%;
+  transform: translateY(-50%);
+  width: 15rem;
+  font-size: 3rem;
+  opacity: 0;
+  margin-left: 1rem;
+}
+
+.beautiful {
+  color: rgb(7, 248, 248);
+}
+
+.awesome {
+  color: rgb(255, 115, 0);
+}
+
+.big {
+  color: rgb(255, 0, 242);
+}
+
+.marvelous {
+  color: rgb(0, 255, 0);
+}
+
+.letter {
+  float: left;
+  transform-origin: 50% 50% 20px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.58s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
