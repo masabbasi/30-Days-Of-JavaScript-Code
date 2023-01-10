@@ -66,6 +66,7 @@ p {
 	text-align: center;
 	color: white;
 	text-align: center;
+	color: rgb(5, 214, 214);
 }
 
 textarea {
@@ -89,7 +90,7 @@ margin: 2rem 0;
 }
 
 .tags ul li {
-	background-color: aqua;
+	background-color: rgb(1, 163, 163);
 	height: 3rem;
 	border-radius: 0.5rem;
 	padding: 0.5rem;
@@ -99,4 +100,5 @@ margin: 2rem 0;
 	justify-content: center;
 	align-items: center;
 	min-width: 5rem;
+	color: white;
 }
