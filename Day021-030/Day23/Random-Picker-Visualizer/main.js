@@ -14,8 +14,8 @@ function createTag(all){
 	list.innerHTML = '';
 	tags.forEach(function(tag){
 		let li = document.createElement("li");
-		li.innerText=`#${tag}`;
-		// li.innerText=`#${tag.replaceAll(" ","_")}`;
+		// li.innerText=`#${tag}`;
+		li.innerText=`#${tag.replace(" ","_")}`;
 		list.appendChild(li);
 	})
 }
