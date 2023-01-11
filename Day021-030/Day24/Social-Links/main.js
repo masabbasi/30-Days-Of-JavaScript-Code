@@ -1,15 +1,3 @@
-// const socialMediaOpen = document.querySelector(".socialMediaOpen");
-// const socialItem = document.querySelector(".socialItem");
-// const socialItemClose = document.querySelector(".close");
-
-// socialMediaOpen.addEventListener("click",function(){
-// 	socialItem.classList.add("socialItemShow")
-// })
-
-// socialItemClose.addEventListener("click",function(){
-// 	socialItem.classList.remove("socialItemShow");
-// })
-
 const socialMediaBtn = document.querySelector(".socialMediaBtn");
 const socialMediaBtnIcon = document.querySelector(".socialMediaBtn div");
 const socialItem = document.querySelector(".socialItem");
