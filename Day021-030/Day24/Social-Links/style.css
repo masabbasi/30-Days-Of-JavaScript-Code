@@ -1,0 +1,183 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* font-size: 10px; */
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+	width: 100%;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-color: #141627;
+  font-family: "Roboto", sans-serif;
+}
+
+.back {
+  width: 7rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: brown;
+  border-radius: 1rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.back a {
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: 80vh;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Reset Style */
+a {
+  text-decoration: none;
+}
+
+.socialMediaBtn {
+	position: absolute;
+	bottom: 2rem;
+	right: 2rem;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	background-color: rgb(21, 255, 0);
+	border: 0.1rem solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+
+.socialMediaBtn div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.socialMediaBtnAni {
+	transform:rotate(360deg);
+	transition: all 0.5s ease-in;
+}
+
+.socialItem {
+	position: absolute;
+	bottom: 2rem;
+	right: 2rem;
+  width: 5rem;
+	height: 5rem;
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	background-color: white;
+	border-radius: 5rem;
+	transition: all 0.5s ease-in;
+	overflow: hidden;
+}
+
+.socialItemShow {
+	transition: all 0.5s ease-in;
+	height: 30rem;
+}
+
+.socialItem div {
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialItem svg,.socialMediaBtn svg{
+  width: 3rem;
+  height: 3rem;
+	fill:white;
+	padding: 0.5rem;
+	border-radius: 50%;
+}
+
+.socialMediaBtn svg {
+	border-radius: 0;
+}
+
+.instagram svg {
+  background-color: #e1306c;
+}
+
+.linkedin svg {
+  background-color: #0077b5;
+}
+
+.github svg {
+  background-color: #333;
+}
+
+.twitter svg {
+  background-color: #1da1f2;
+}
+
+.telegram svg {
+  background-color: #0088cc;
+}
+
+.youtube svg {
+  background-color: #ff0000;
+}
+
+.socialItem div:hover svg {
+	background-color:transparent;
+	transition: all 0.2s ease-in;
+}
+
+.instagram:hover svg {
+  fill: #e1306c;
+}
+
+.linkedin:hover svg {
+  fill: #0077b5;
+}
+
+.github:hover svg {
+  fill: #333;
+}
+
+.twitter:hover svg {
+  fill: #1da1f2;
+}
+
+.telegram:hover svg {
+  fill: #0088cc;
+}
+
+.youtube:hover svg {
+  fill: #ff0000;
+}
+
+.social div:hover svg {
+  fill: #6d6565;
+}
