@@ -25,11 +25,7 @@ window.addEventListener("scroll", () => {
   const scrollHeight = document.documentElement.scrollHeight;
   const clientHeight = document.documentElement.clientHeight;
   // const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-	console.log(scrollHeight - 50);
-		console.log(scrollTop + clientHeight);
   if (scrollTop + clientHeight === scrollHeight) {
-		console.log(scrollHeight - 50);
-		console.log(scrollTop + clientHeight);
     showLoading();
   }
 });
@@ -48,12 +44,13 @@ function showLoading() {
 }
 
 function randomDate() {
-  const start = new Date(2012, 0, 1);
-  const end = new Date();
-  const date = new Date(
-    start.getTime() + Math.random() * (end.getTime() - start.getTime())
-  );
-  const postDate = `${date.getDay()}/${date.getMonth()}/${date.getFullYear()}`;
+  const maxDate = Date.now();
+  const timestamp = Math.floor(Math.random() * maxDate);
+  const date = new Date(timestamp);
+
+  console.log(date);
+  const postDate = date.getUTCFullYear() + "/" + (date.getUTCMonth() + 1) + "/" + date.getUTCDate();
+  console.log(postDate);
   return postDate;
 }
 
