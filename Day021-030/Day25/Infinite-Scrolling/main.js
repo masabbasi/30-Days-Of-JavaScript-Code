@@ -25,6 +25,7 @@ window.addEventListener("scroll", () => {
   const scrollHeight = document.documentElement.scrollHeight;
   const clientHeight = document.documentElement.clientHeight;
   // const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+	document.querySelector(".test").innerHTML=`${scrollTop + clientHeight}  :  ${scrollHeight}`;
   if ((scrollTop + clientHeight) >= scrollHeight-5) {
     showLoading();
   }
