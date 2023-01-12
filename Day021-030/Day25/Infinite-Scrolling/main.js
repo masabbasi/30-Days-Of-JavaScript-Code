@@ -25,7 +25,11 @@ window.addEventListener("scroll", () => {
   const scrollHeight = document.documentElement.scrollHeight;
   const clientHeight = document.documentElement.clientHeight;
   // const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
-  if (scrollTop + clientHeight >= scrollHeight - 5) {
+	console.log(scrollHeight - 50);
+		console.log(scrollTop + clientHeight);
+  if (scrollTop + clientHeight === scrollHeight) {
+		console.log(scrollHeight - 50);
+		console.log(scrollTop + clientHeight);
     showLoading();
   }
 });
@@ -36,6 +40,8 @@ function showLoading() {
   setTimeout(() => {
     loading.classList.remove("loading-show");
     setTimeout(() => {
+      createPost();
+      createPost();
       createPost();
     }, 400);
   }, 1500);
