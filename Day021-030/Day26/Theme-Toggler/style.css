@@ -71,10 +71,6 @@ a {
 	background-color: rgb(46, 54, 95);
 }
 
-#toggler {
-  display: none;
-}
-
 .toggler__lable {
   background-color: rgb(0, 0, 0);
   width: 6rem;
@@ -87,10 +83,9 @@ a {
   padding: 2rem 0.5rem;
 }
 
-label div {
+.sun,.moon {
   width: 2rem;
   height: 2rem;
-  display: block;
 }
 
 .sun svg,.moon svg {
