@@ -55,7 +55,7 @@ function randomDate() {
   const date = new Date(timestamp);
 
   console.log(date);
-  const postDate = date.getUTCFullYear() + "/" + (date.getUTCMonth() + 1) + "/" + date.getUTCDate();
+  const postDate = date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + date.getDate();
   console.log(postDate);
   return postDate;
 }
