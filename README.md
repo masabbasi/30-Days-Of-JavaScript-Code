@@ -11,7 +11,7 @@ There are also three other variants you might want to try:
 
 You can find the detailed information about the Challenge [on this blog](https://florin-pop.com/blog/2019/09/100-days-100-projects).
 
-Resources for projects: [One](https://florin-pop.com/blog/2019/09/100-days-100-projects) & [Two](https://github.com/MohammedHamzaMalik/100-Days-of-JavaScript-Code).
+Resources for projects: [One](https://florin-pop.com/blog/2019/09/100-days-100-projects), [Two](https://github.com/MohammedHamzaMalik/100-Days-of-JavaScript-Code) & etc.
 
 Start Date: 17/12/2022.
 
