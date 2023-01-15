@@ -118,5 +118,5 @@ ul li {
 }
 
 .dropdown-menu.show {
-	max-height: 10rem;
+	max-height: 200rem;
 }
