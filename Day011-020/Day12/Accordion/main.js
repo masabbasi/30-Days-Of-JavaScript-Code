@@ -13,7 +13,6 @@ accordionHead.forEach((headItem, headIndex) => {
   });
 });
 
-
 // const oC = document.querySelectorAll(".accordion__oc");
 // const accordionHead = document.querySelectorAll(".accordion__head");
 // const accordionBody = document.querySelectorAll(".accordion__body");
