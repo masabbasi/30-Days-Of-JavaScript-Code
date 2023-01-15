@@ -26,6 +26,7 @@ window.addEventListener("scroll", () => {
   const clientHeight = document.documentElement.clientHeight;
   // const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
 	document.querySelector(".test").innerHTML=`
+	Hi::
 	clientHeight:${clientHeight},
 	scrollTop: ${scrollTop},
 	scrollHeight: ${scrollHeight}///
