@@ -20,22 +20,26 @@ const contents = [
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, molestiae fugit laudantium porro dicta mollitia cum corrupti placeat dignissimos. Autem maiores consectetur reiciendis repudiandae architecto officia ut placeat sapiente. Perferendis, doloremque veniam dignissimos nemo recusandae ipsa sint magni, aliquid repudiandae libero quidem et facilis ad odit, quia eligendi error cum!",
 ];
 
+
 window.addEventListener("scroll", () => {
-  const scrollY = window.scrollY;
-  const scrollHeight = document.documentElement.scrollHeight;
-  const clientHeight = document.documentElement.clientHeight;
-  // const { scrollY, scrollHeight, clientHeight } = document.documentElement;
-	document.querySelector(".test").innerHTML=`
-	Hi--
-	clientHeight:${clientHeight},
-	scrollY: ${scrollY},
-	scrollHeight: ${scrollHeight}///
-	${scrollY + clientHeight}  :  ${scrollHeight}
-	`;
-  if ((scrollY + clientHeight) >= (scrollHeight)) {
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
     showLoading();
   }
 });
+
+// not work in all mobile device:
+// window.addEventListener("scroll", () => {
+//   // const scrollTop = document.documentElement.scrollTop;
+//   // const scrollHeight = document.documentElement.scrollHeight;
+//   // const clientHeight = document.documentElement.clientHeight;
+//   // const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+//   if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+//     showLoading();
+//   }
+// });
+//   if ((scrollTop + clientHeight) >= (scrollHeight)) {
+//     showLoading();
+//   }
 
 function showLoading() {
   loading.classList.add("loading-show");
@@ -43,8 +47,6 @@ function showLoading() {
   setTimeout(() => {
     loading.classList.remove("loading-show");
     setTimeout(() => {
-      createPost();
-      createPost();
       createPost();
     }, 400);
   }, 1500);
@@ -56,7 +58,8 @@ function randomDate() {
   const date = new Date(timestamp);
 
   console.log(date);
-  const postDate = date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + date.getDate();
+  const postDate =
+    date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + date.getDate();
   console.log(postDate);
   return postDate;
 }
