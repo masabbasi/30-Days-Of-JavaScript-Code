@@ -21,18 +21,18 @@ const contents = [
 ];
 
 window.addEventListener("scroll", () => {
-  const scrollTop = document.documentElement.scrollTop;
+  const scrollY = window.scrollY;
   const scrollHeight = document.documentElement.scrollHeight;
   const clientHeight = document.documentElement.clientHeight;
-  // const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+  // const { scrollY, scrollHeight, clientHeight } = document.documentElement;
 	document.querySelector(".test").innerHTML=`
-	Hi++
+	Hi--
 	clientHeight:${clientHeight},
-	scrollTop: ${scrollTop},
+	scrollY: ${scrollY},
 	scrollHeight: ${scrollHeight}///
-	${scrollTop + clientHeight}  :  ${scrollHeight}
+	${scrollY + clientHeight}  :  ${scrollHeight}
 	`;
-  if ((scrollTop + clientHeight) >= (scrollHeight)) {
+  if ((scrollY + clientHeight) >= (scrollHeight)) {
     showLoading();
   }
 });
