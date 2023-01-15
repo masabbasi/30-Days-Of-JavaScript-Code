@@ -105,7 +105,7 @@ ul li {
 
 .dropdown-menu {
 	max-height: 0;
-  overflow: hidden;
+	overflow: hidden;
 	transition: max-height 0.6s ease-in-out;
 }
 
@@ -113,10 +113,11 @@ ul li {
 	max-height: 20rem;
 }
 
+
 .dropdown > a:hover {
-  background: #2c89c6;
+	background: #2c89c6;
 }
 
 .dropdown-menu > a:hover {
-	background: #f6f6f6;
+background: #f6f6f6;
 }

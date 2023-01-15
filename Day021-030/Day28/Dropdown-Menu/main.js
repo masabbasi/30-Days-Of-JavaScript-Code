@@ -8,6 +8,7 @@ items.forEach((item,itemIndex)=>{
 			if(itemIndex===menuItemIndex) {
 				item.classList.toggle("active");
 				menuItem.classList.toggle("show");
+				menuItem.classList.toggle("hide");
 			}
 		})
 	})
