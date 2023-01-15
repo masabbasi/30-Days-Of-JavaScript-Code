@@ -109,18 +109,19 @@ a {
   color: rgb(44, 42, 42);
   text-align: justify;
   border-radius: 0 0 1rem 1rem;
-	max-height: 0;
 	overflow: hidden;
-	transition: max-height 0.6s ease-in-out;
+	transition: height 0.6s ease-in-out;
+	/* for get Height and another (JS Code): max-height: 0; transition: max-height 0.6s ease-in-out; */
 }
 
 .accordion__body p {
 	padding: 1rem 2.5rem;
 }
 
+/* for get Height and another (JS Code)
 .accordion__body--open {
 	max-height: 40rem;
-}
+} */
 
 @media (max-width: 500px) {
   .accordion__head {
