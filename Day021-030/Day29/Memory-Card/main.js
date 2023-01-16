@@ -54,6 +54,7 @@ function disableCard() {
     clearInterval(myTimer);
     setRecord();
     time = true;
+		fixCard = 0;
     again.style.display = "block";
     again.addEventListener("click", () => {
       again.style.display = "none";
