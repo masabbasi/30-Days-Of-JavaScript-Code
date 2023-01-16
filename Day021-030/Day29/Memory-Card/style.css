@@ -18,6 +18,7 @@ body {
   overflow-x: hidden;
   background-color: #141627;
   font-family: "Roboto", sans-serif;
+	user-select: none;
 }
 
 .back {
@@ -47,11 +48,82 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+	flex-direction: column;
   justify-content: center;
   align-items: center;
+	position: relative;
 }
 
 /* Reset Style */
 a {
   text-decoration: none;
+}
+
+.box {
+  width: 30rem;
+  height: 30rem;
+  perspective: 100rem;
+  background-color: rgb(7, 133, 133);
+  display: grid;
+  padding: 2rem 1rem;
+	display: flex;
+	flex-wrap: wrap;
+  /* grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr); */
+}
+
+.card {
+	width: calc(25% - 2rem);
+	height: calc(33.333% - 2rem);
+  position: relative;
+  background-color: rgba(6, 86, 88, 0.226);
+  margin: 1rem;
+  display: flex;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.back-face,
+.front-face {
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
+
+.time {
+	font-size: 4rem;
+	font-weight: bold;
+	color: white;
+}
+
+.record {
+font-size: 2rem;
+color: rgb(71, 218, 71);
+}
+
+.again {
+	padding: 1rem 2rem;
+	border-radius: 0.5rem;
+	background-color: rgb(23, 221, 50);
+	color: white;
+	position: absolute;
+	z-index: 1;
+	box-shadow: 0 0 50px 50px rgb(12, 143, 143);
+	display: none;
 }
