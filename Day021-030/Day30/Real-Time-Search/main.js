@@ -69,6 +69,7 @@ function updateResult() {
 }
 
 function showContent(data) {
+	console.log(data);
   let it = i;
   for (i; i < it + 5; i++) {
     let div1 = document.createElement("div");
@@ -92,7 +93,7 @@ function showContent(data) {
     div5.innerText = data[i].release_date;
     let div6 = document.createElement("div");
     div6.classList.add("film-type");
-    div6.innerText = "---";
+    div6.innerText = `Vote Average: ${data[i].vote_average}`;
     let div7 = document.createElement("div");
     div7.classList.add("film-imdb");
     let a = document.createElement("a");
