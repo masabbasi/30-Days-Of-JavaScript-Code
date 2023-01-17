@@ -7,13 +7,6 @@ let all = [];
 let i = 0;
 more.addEventListener("click", () => showContent(all));
 
-const options = {
-  method: "GET",
-  headers: {
-    "X-RapidAPI-Key": "e875558efdmshb0c1999f0925818p10099cjsn54efb51a5777",
-    "X-RapidAPI-Host": "moviesdatabase.p.rapidapi.com",
-  },
-};
 fetch(
   "https://api.themoviedb.org/3/movie/popular?api_key=1644cab2ac396911f038df14a74a9ca4&language=en-US&page=1"
 )
