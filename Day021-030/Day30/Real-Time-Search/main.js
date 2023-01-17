@@ -42,39 +42,39 @@ function updateResult() {
     searchResult.style.display = "none";
   }
   function createResult(data) {
-		console.log(data);
-		if (data.length===0) {
-			searchResult.innerHTML = "Not Found!";
-		}
-    for (let j = 0; j < data.length; j++) {
-      let a = document.createElement("a");
-      a.classList.add("link-result");
-      a.setAttribute("href", `#`);
-      // a.setAttribute("href", `https://www.imdb.com/title/${idmb_code}`);
-      let div1 = document.createElement("div");
-      div1.classList.add("search-result-item");
-      let div2 = document.createElement("div");
-      div2.classList.add("search-result-img");
-      let img = document.createElement("img");
-			let src = data[j].backdrop_path ===null?"./imdb.png":`https://image.tmdb.org/t/p/w500dat${a[j].backdrop_path}`;
-      img.setAttribute(
-        "src",
-        `${src}`
-      );
-      let div3 = document.createElement("div");
-      div3.classList.add("search-result-name");
-      div3.innerText = data[j].original_title;
-      div2.appendChild(img);
-      div1.appendChild(div2);
-      div1.appendChild(div3);
-      a.appendChild(div1);
-      searchResult.appendChild(a);
+    if (data.length === 0) {
+      searchResult.innerHTML = "Not Found!";
+    } else {
+      for (let j = 0; j < data.length; j++) {
+        let a = document.createElement("a");
+        a.classList.add("link-result");
+        a.setAttribute("href", `#`);
+        // a.setAttribute("href", `https://www.imdb.com/title/${idmb_code}`);
+        let div1 = document.createElement("div");
+        div1.classList.add("search-result-item");
+        let div2 = document.createElement("div");
+        div2.classList.add("search-result-img");
+        let img = document.createElement("img");
+        let src =
+          data[j].backdrop_path === null
+            ? "./imdb.png"
+            : `https://image.tmdb.org/t/p/w500${data[j].backdrop_path}`;
+        img.setAttribute("src", `${src}`);
+        let div3 = document.createElement("div");
+        div3.classList.add("search-result-name");
+        div3.innerText = data[j].original_title;
+        div2.appendChild(img);
+        div1.appendChild(div2);
+        div1.appendChild(div3);
+        a.appendChild(div1);
+        searchResult.appendChild(a);
+      }
     }
   }
 }
 
 function showContent(data) {
-	console.log(data);
+  console.log(data);
   let it = i;
   for (i; i < it + 5; i++) {
     let div1 = document.createElement("div");
