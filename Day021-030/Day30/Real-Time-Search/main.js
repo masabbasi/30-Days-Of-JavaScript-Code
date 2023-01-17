@@ -42,6 +42,10 @@ function updateResult() {
     searchResult.style.display = "none";
   }
   function createResult(data) {
+		console.log(data);
+		if (data.length===0) {
+			searchResult.innerHTML = "Not Found!";
+		}
     for (let j = 0; j < data.length; j++) {
       let a = document.createElement("a");
       a.classList.add("link-result");
@@ -52,9 +56,10 @@ function updateResult() {
       let div2 = document.createElement("div");
       div2.classList.add("search-result-img");
       let img = document.createElement("img");
+			let src = data[j].backdrop_path ===null?"./imdb.png":`https://image.tmdb.org/t/p/w500dat${a[j].backdrop_path}`;
       img.setAttribute(
         "src",
-        `https://image.tmdb.org/t/p/w500${data[j].backdrop_path}`
+        `${src}`
       );
       let div3 = document.createElement("div");
       div3.classList.add("search-result-name");
