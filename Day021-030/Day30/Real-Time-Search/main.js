@@ -15,7 +15,6 @@ fetch(
     all = response.results;
     showContent(all);
   })
-  // .then((response) => console.log(response.results))
   .catch((err) => console.error(err));
 
 function updateResult() {
