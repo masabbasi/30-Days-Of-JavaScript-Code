@@ -183,11 +183,11 @@ a {
 
 .film {
   width: 40rem;
-  height: 20rem;
+  height: 16rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background-color: rgb(22, 153, 153);
+  background-color: rgba(60, 194, 194, 0.199);
   padding: 1rem;
   margin: 0.5rem;
   flex-grow: 1;
@@ -206,7 +206,7 @@ a {
 }
 
 .left img {
-  
+	align-self: stretch;
 }
 
 .right {
@@ -218,18 +218,20 @@ a {
 }
 
 .film-name {
-  font-size: 2rem;
+  font-size: 1.8rem;
   height: 5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.1rem;
+	line-height: 1.1;
 }
 
 .film-years {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+	margin-top: 0.3rem;
 }
 
-.film-type {
-  font-size: 1.7rem;
-  margin: 0.7rem 0;
+.film-vote {
+  font-size: 1.6rem;
+	margin-bottom: 0.3rem;
 }
 
 .film-imdb {

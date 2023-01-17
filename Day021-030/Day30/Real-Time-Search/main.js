@@ -97,7 +97,7 @@ function showContent(data) {
     div5.classList.add("film-years");
     div5.innerText = data[i].release_date;
     let div6 = document.createElement("div");
-    div6.classList.add("film-type");
+    div6.classList.add("film-vote");
     div6.innerText = `Vote Average: ${data[i].vote_average}`;
     let div7 = document.createElement("div");
     div7.classList.add("film-imdb");
