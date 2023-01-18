@@ -5,6 +5,11 @@ let millisecond = 00;
 let time = true;
 let myTimer;
 
+const audioWrong = new Audio("./wrong.mp3");
+const audioCorrect = new Audio("./correct.mp3");
+const audioSuccess = new Audio("./success.mp3");
+
+
 const recordTime = document.querySelector(".record__time");
 let bestTime = [];
 if (JSON.parse(localStorage.getItem("memory-card-record")) == null) {
@@ -47,10 +52,12 @@ function checkForMatch() {
 }
 
 function disableCard() {
+	audioCorrect.play();
   firstCard.removeEventListener("click", flipCard);
   secondCard.removeEventListener("click", flipCard);
   fixCard += 2;
   if (fixCard === 12) {
+		audioSuccess.play();
     clearInterval(myTimer);
     setRecord();
     time = true;
@@ -74,6 +81,7 @@ function disableCard() {
 }
 
 function unflipCards() {
+	audioWrong.play();
   lockBoard = true;
   setTimeout(() => {
     firstCard.classList.remove("flip");
