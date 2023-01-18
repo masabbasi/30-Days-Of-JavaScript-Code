@@ -30,6 +30,8 @@ let firstCard, secondCard;
 let fixCard = 0;
 
 function flipCard() {
+	audioCorrect.pause();
+	audioCorrect.currentTime = 0;
   if (time) {
     myTimer = setInterval(update, 10);
     time = false;
